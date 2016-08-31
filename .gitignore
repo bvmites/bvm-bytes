@@ -1,0 +1,10 @@
+# IDEA
+.idea
+
+# Node
+node_modules
+npm-debug.log
+
+# Local
+*.env
+*.dev

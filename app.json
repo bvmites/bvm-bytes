@@ -1,0 +1,8 @@
+{
+  "name": "BVM Bytes",
+  "description": "Feed Burner for BVMites",
+  "repository": "https://github.com/bvmites/bvm-bytes",
+  "logo": "https://bvm-bytes.herokuapp.com/logo.png",
+  "keywords": ["node", "bvm", "bytes", "feed", "burner"],
+  "image": "heroku/nodejs"
+}
