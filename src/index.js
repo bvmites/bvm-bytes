@@ -12,7 +12,7 @@ app.set('port', process.env.PORT || 8080)
 app.use(express.static(__dirname + '/public'))
 app.use(bodyParser.json())
 if (!process.env.PRODUCTION)
-  app.use(require('morgan')("default"))
+  app.use(require('morgan')("combined"))
 
 // Set view engine `ejs` and views directory.
 app.set('views', __dirname + '/views')
