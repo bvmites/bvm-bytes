@@ -1,4 +1,5 @@
 const express = require('express')
+const bodyParser = require('body-parser')
 const app = express()
 
 // Require Routers.
@@ -9,6 +10,7 @@ app.set('port', process.env.PORT || 8080)
 
 // Host files from public directory statically.
 app.use(express.static(__dirname + '/public'))
+app.use(bodyParser.json())
 
 // Set view engine `ejs` and views directory.
 app.set('views', __dirname + '/views')

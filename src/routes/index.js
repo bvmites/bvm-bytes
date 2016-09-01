@@ -9,4 +9,12 @@ router.get('/', (req, res) => {
   })
 })
 
+router.post('/oauth', (req, res) => {
+  "use strict"
+  res.render('oauth', {
+    headers: req.headers,
+    body: req.body
+  })
+})
+
 module.exports = router
