@@ -1,6 +1,6 @@
 {
   "name": "bvm-bytes",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Feed Burner for BVMites",
   "engines": {
     "node": "5.9.1"
@@ -26,7 +26,6 @@
     "cookie-parser": "^1.4.3",
     "ejs": "^2.5.1",
     "express": "^4.14.0",
-    "morgan": "^1.7.0",
     "request": "^2.74.0"
   }
 }
