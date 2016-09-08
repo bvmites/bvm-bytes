@@ -9,16 +9,16 @@ router.get('/', (req, res) => {
   // Get token from user.
   H.getToken(req).then(token => {
 
-    // Get members of bvmites. If the user is not a member then only public member will be shown.
+    // Get members of bvmites. If the user is not a member then only public members will be shown.
     H.getMembers(token)
       .then(members =>
 
         // Get feeds of each member of bvmites.
         Promise.all(members.map(H.getFeeds(token))))
-      .then(feeds => {
+      .then(data => {
 
         // Render the page.
-        res.render('index', {data: feeds})
+        res.render('index', {data})
       })
       .catch(invalidToken => {
 

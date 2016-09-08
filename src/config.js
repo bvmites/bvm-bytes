@@ -1,4 +1,4 @@
-const config = {
+module.exports = {
   urls: {
 
     members: 'https://api.github.com/orgs/bvmites/members',
@@ -13,5 +13,3 @@ const config = {
         process.env.CLIENT_SECRET}&code=${code}`
   }
 }
-
-module.exports = config
